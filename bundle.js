@@ -419,8 +419,14 @@
 	    }
 	  });
 	});
-	function search(searchTerm) {
 
+	function clearSearch() {
+	  urlArray = [];
+	  (0, _jquery2.default)('.results').html('');
+	}
+
+	function search(searchTerm) {
+	  clearSearch();
 	  _jquery2.default.ajax({
 	    type: "GET",
 	    url: url + searchTerm,
@@ -431,8 +437,8 @@
 	      //console.log(data)
 
 	      for (var i = 0; i < data[1].length; i++) {
-	        (0, _jquery2.default)('body').append("<h3 class=\"" + i + "\">" + data[1][i] + "</h3>");
-	        (0, _jquery2.default)('body').append("<p class=\"" + i + "\">" + data[2][i] + "</p>");
+	        (0, _jquery2.default)('.results').append("<h3 class=\"" + i + "\">" + data[1][i] + "</h3>");
+	        (0, _jquery2.default)('.results').append("<p class=\"" + i + "\">" + data[2][i] + "</p>");
 	        urlArray.push(data[3][i]);
 	        (0, _jquery2.default)("." + i).on('click', function () {
 	          window.open(urlArray[(0, _jquery2.default)(this).attr("class")], '_blank');
