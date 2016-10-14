@@ -84,7 +84,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background : white\n}\n", ""]);
+	exports.push([module.id, "body {\n  background : white\n}\n\n.container {\n  margin: 20px auto;\n  padding: 20px;\n  max-width: 700px;\n  width: 80%;\n  vertical-align: center\n}\n\n\nh1 {\n  font-family: 100% 'Playfair Display',serif;\n  font-size: 2.0rem\n}\n\nh3 {\n  font-family: 100% 'Playfair Display',serif;\n  font-weight: 700\n}\n\np {\n  font-family: 100% 'Playfair Display',serif;\n  font-weight: 400 italic\n}\n", ""]);
 
 	// exports
 
