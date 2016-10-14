@@ -1,5 +1,10 @@
-include includes/header
-
+//include includes/header
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet" type="text/css">
 body
-    h1 My Site
-    p Welcome to my website. 
+  .container
+    h1 WikiViewer
+    input.form-input#searchbox(type="text")
+    br
+    button.btn.btn-large#random
+      a#a(href="https://en.wikipedia.org/wiki/Special:Random",target="_blank") Random
+    .results
