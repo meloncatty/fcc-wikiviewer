@@ -1,24 +1,64 @@
 $myFonts: 'Playfair Display', serif
 
 body
-  background : white
+  background : orange
 
 .container
-  position: absolute
-  top: 20%
-  left: 50%
-  margin-right: -50%
-  transform: translate(-50%, -50%)
+  width: 100%
+  margin: 20px 0 20px 0
+
+.left
+  float: left
+  width: 75%
+  font-family: $myFonts
+  //margin-right: 0 auto
+  background-color: white
+
+
+.right
+  float: right
+  text-align: center
+  //margin-left: 20px
+  background-color: white
+  font-family: $myFonts
 
 
 h1
-  font-family: 100% $myFonts
+  font-family: $myFonts
   font-size: 2.0rem
 
+
+a:link
+  text-decoration: none
+  color: grey
+  background-color: white
+  border-width: 0
+  border-color: grey
+
+input#searchbox
+  top: 0
+  right: 0
+  border-width: 5px
+  border-radius: 25px
+  border-color: black
+  outline: 0
+  background: #dcddd8
+  width: 100%
+  height: 50px
+  margin: 0
+  padding: 0px 55px 0px 20px
+  font-size: 20px
+  color: red
+  font-family: $myFonts
+
+button
+  margin-top: 21px
+  font-family: $myFonts
+
 h3
-  font-family: 100% $myFonts
-  font-weight: 700
+  font-style: bold
+
 
 p
-  font-family: 100% $myFonts
-  font-weight: 400 italic
+  font-style: italic
+  font-size: 1em
