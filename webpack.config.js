@@ -4,6 +4,8 @@ var path = require('path')
 var precss       = require('precss')
 var autoprefixer = require('autoprefixer')
 var sugarss      = require('sugarss')
+var lost = require('lost')
+var rucksack = require('rucksack-css')
 
 module.exports = {
   context: path.join(__dirname, '/app'),
@@ -33,7 +35,7 @@ module.exports = {
   },
   postcss: function () {
     return {
-      plugins: [autoprefixer, precss],
+      plugins: [autoprefixer, precss, lost, rucksack],
       parser: sugarss
     }
   },

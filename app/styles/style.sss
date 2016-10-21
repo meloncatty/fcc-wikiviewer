@@ -1,32 +1,48 @@
 $myFonts: 'Playfair Display', serif
 
 body
-  background : orange
+  lost-utility: edit
+  lost-utility: clearfix
+  background: #556270; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #556270 , #FF6B6B); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #556270 , #FF6B6B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 .container
-  width: 100%
   margin: 20px 0 20px 0
 
-.left
-  float: left
-  width: 75%
-  font-family: $myFonts
-  //margin-right: 0 auto
-  background-color: white
 
+.results
+  //padding: 5px
+  lost-column: 9/12
+  font-family: $myFonts
+  margin-bottom: 20px
+  background-color: transparent
+  //font-size: responsive
+  overflow-y: auto
+  height: 100%
 
 .right
-  float: right
+  lost-column: 3/12
+  background-color: transparent
+  font-family: $myFonts
+  margin-bottom: 20px
+  height: 100%
+  //height: 100%
+  //lost-center: flex
+  //lost-align: top-center
+
+h1#title
+  font-family: $myFonts
+  font-size: 42
+  lost-align: top-center
+  //lost-center: flex
   text-align: center
-  //margin-left: 20px
-  background-color: white
-  font-family: $myFonts
-
-
-h1
-  font-family: $myFonts
-  font-size: 2.0rem
-
+  margin: 0 auto
+  //margin: 0 auto
+  //width: 100%
+  //margin-top: 5px
+  //font-size: responsive
 
 a:link
   text-decoration: none
@@ -47,18 +63,24 @@ input#searchbox
   height: 50px
   margin: 0
   padding: 0px 55px 0px 20px
-  font-size: 20px
+  font-size: 15px
   color: red
   font-family: $myFonts
 
 button
-  margin-top: 21px
   font-family: $myFonts
-
+  lost-center: flex
+  margin-top: 21px
+  padding: 0.5em 1em
+  border-radius: 4px
+  
 h3
   font-style: bold
+  padding-left: 5px
 
 
 p
   font-style: italic
   font-size: 1em
+  padding-left: 5px
+  padding-right: 5px
