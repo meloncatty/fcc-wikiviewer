@@ -1,11 +1,9 @@
 $myFonts: 'Playfair Display', serif
 
 body
-  lost-utility: edit
+  //lost-utility: edit
   lost-utility: clearfix
-  background: #556270; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #556270 , #FF6B6B); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #556270 , #FF6B6B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #E8C386; /* fallback for old browsers */
 
 
 .container
@@ -21,6 +19,18 @@ body
   //font-size: responsive
   overflow-y: auto
   height: 100%
+
+.myFPC
+  border-radius: 10px
+  border-width: 1px
+  border-color: black
+  border-style: solid
+  margin-bottom: 5px
+  background: #DCDDD8
+  margin-left: 30px
+
+
+
 
 .right
   lost-column: 3/12
@@ -46,10 +56,9 @@ h1#title
 
 a:link
   text-decoration: none
-  color: grey
-  background-color: white
-  border-width: 0
-  border-color: grey
+  color: #E8B979
+  background-color: none
+
 
 input#searchbox
   top: 0
@@ -64,7 +73,7 @@ input#searchbox
   margin: 0
   padding: 0px 55px 0px 20px
   font-size: 15px
-  color: red
+  color: #000
   font-family: $myFonts
 
 button
@@ -73,14 +82,26 @@ button
   margin-top: 21px
   padding: 0.5em 1em
   border-radius: 4px
+  background: #E8B96B
+  color: #dcddd8
+  border: 1px solid #E8B96B
+  box-shadow: 0 4px 0px #E8B979
 
 h3
   font-style: bold
   padding-left: 5px
+  border-radius: 10px
+  margin-top: 8px
+  margin-bottom: 8px
 
 
 p
-  font-style: italic
   font-size: 1em
   padding-left: 5px
   padding-right: 5px
+  border-radius: 10px
+  margin-top: 8px
+  margin-bottom: 8px
+
+hr
+  border: 1px solid #000

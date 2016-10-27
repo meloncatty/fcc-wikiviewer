@@ -29,9 +29,12 @@ function search (searchTerm){
             //console.log(data)
 
             for(var i = 0; i < data[1].length; i++){
-              $('.results').append(`<h3 class="${i}">` + data[1][i] + "</h3>");
-              $('.results').append(`<p class="${i}">` + data[2][i] + "</p>");
+              //$()
+              $('.results').append('<div class = "myFPC" id="' + i + '">')
+              $(`#${i}`).append(`<h3 class="${i}">` + data[1][i] + "</h3>");
+              $(`#${i}`).append(`<p class="${i}">` + data[2][i] + "</p>");
               urlArray.push(data[3][i]);
+              $('')
               $(`.${i}`).on('click', function(){
                 window.open(urlArray[$(this).attr("class")], '_blank');
               });
